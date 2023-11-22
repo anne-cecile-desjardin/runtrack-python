@@ -1,2 +1,0 @@
-alphabet=("abcdefghijklmnopqrstuvwxyz")
-print (alphabet)
