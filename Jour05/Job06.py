@@ -9,6 +9,22 @@
 #➔ Qu’une fois en bas, le gardien doit remonter ;
 #➔ Que le résultat est à exprimer en m.
 
-#
+def distance_toilettes_par_semaine_gardien(nb_marches, hauteur_marche):
+    marches_par_jour = 5
+    jours_par_semaine = 7
+
+    distance_par_marche = hauteur_marche / 100  # Conversion de cm en mètres
+
+    distance_par_jour = marches_par_jour * distance_par_marche
+    distance_par_semaine = jours_par_semaine * distance_par_jour
+
+    return distance_par_semaine
+
+# Exemple d'utilisation avec 100 marches de 20 cm chacune
+nb_marches_exemple = 100
+hauteur_marche_exemple = 20
+distance_totale = distance_toilettes_par_semaine_gardien(nb_marches_exemple, hauteur_marche_exemple)
+
+print(f"Pour {nb_marches_exemple} marches de {hauteur_marche_exemple} cm, le gardien parcourt {distance_totale:.2f} m par semaine.")
 
 
